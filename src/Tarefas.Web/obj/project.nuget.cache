@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "79Zp06+ExS7ZmJHuwnOf7/7L/mNSon4MKTttqp49b0Ky1krMkVRlqG6ci+9kRuOuyhht0wQMIInjQf8EVxKaUA==",
+  "dgSpecHash": "tSYAiVcRLVb6WV951xiqfn7+THdS/PfqKcNIn7MPdAQY7GMlghr3et7MLFOCw7B6vitlziQFiXyJPtxsnmdSGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
+  "projectFilePath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

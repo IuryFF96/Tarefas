@@ -1,0 +1,18 @@
+@model List<Tarefas.Web.Models.TarefaViewModel>
+
+<table>
+    <tr>
+        <td>Código</td>
+        <td>Título</td>
+        <td>Descrição</td>
+        <td>Ações</td>         
+    </tr>
+    @foreach (var item in Model)
+    {<tr>
+        <td>@item.Id</td>
+        <td>@item.Titulo</td>
+        <td>@item.Descricao</td>
+        <td><a class="nav-link text-dark" asp-controller="Tarefa" asp-action="Detalhar" asp-route-id="@item.Id">Detalhar</a></td>          
+    </tr>
+    }
+</table>

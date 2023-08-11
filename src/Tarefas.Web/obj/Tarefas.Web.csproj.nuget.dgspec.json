@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj": {}
+    "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj": {
+    "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
+        "projectUniqueName": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
         "projectName": "Tarefas.Web",
-        "projectPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
+        "projectPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
         "packagesPath": "C:\\Users\\iff_9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\obj\\",
+        "outputPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iff_9\\AppData\\Roaming\\NuGet\\NuGet.Config"
