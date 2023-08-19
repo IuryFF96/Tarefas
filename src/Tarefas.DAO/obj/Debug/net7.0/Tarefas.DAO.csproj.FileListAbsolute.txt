@@ -1,0 +1,15 @@
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DAO.deps.json
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DAO.dll
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DAO.pdb
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DTO.dll
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DTO.pdb
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.csproj.AssemblyReference.cache
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.AssemblyInfoInputs.cache
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.AssemblyInfo.cs
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.csproj.CoreCompileInputs.cache
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.csproj.CopyComplete
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.dll
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\refint\Tarefas.DAO.dll
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.pdb
+C:\Users\iff_9\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\ref\Tarefas.DAO.dll

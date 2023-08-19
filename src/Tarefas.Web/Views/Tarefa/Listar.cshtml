@@ -1,18 +1,95 @@
-@model List<Tarefas.Web.Models.TarefaViewModel>
+@using Tarefas.Web.Models
+@model List<TarefaViewModel>
 
-<table>
-    <tr>
-        <td>Código</td>
-        <td>Título</td>
-        <td>Descrição</td>
-        <td>Ações</td>         
-    </tr>
-    @foreach (var item in Model)
-    {<tr>
-        <td>@item.Id</td>
-        <td>@item.Titulo</td>
-        <td>@item.Descricao</td>
-        <td><a class="nav-link text-dark" asp-controller="Tarefa" asp-action="Detalhar" asp-route-id="@item.Id">Detalhar</a></td>          
-    </tr>
-    }
-</table>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-code {
+  font-size: 20px;
+  color: #777;
+}
+
+.task-title {
+  margin: 5px 0;
+}
+
+.task-description {
+  margin: 5px 0;
+}
+
+.data-status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.data-status[data-status="Finalizado"] {
+  background-color: green;
+  color: white;
+}
+.data-status[data-status="Pendente"] {
+  background-color: red;
+  color: white;
+}
+.data-status[data-status="Em Progresso"] {
+  background-color: orange;
+  color: white;
+}
+</style>
+
+@if (Model.Count>0)
+{ 
+<h1>Lista de Tarefas</h1>
+@foreach (var item in Model)
+{
+<body>
+  <div class="container">
+    <ul class="task-list">
+      <li class="task">
+        <span class="task-code">Tarefa n.º @item.Id</span>
+        <h2 class="task-title">@item.Titulo</h2>
+        <span class="data-status" data-status="@item.Status">@item.Status</span>&nbsp;&nbsp;
+        <td><a href="@Url.Action("Detalhar", "Tarefa", new { id = item.Id })">Detalhar</a></td>&nbsp;&nbsp;
+        <td><a href="@Url.Action("Editar", "Tarefa", new { id = item.Id })">Editar</a></td>&nbsp;&nbsp;
+        <td><a href="@Url.Action("Excluir", "Tarefa", new { id = item.Id })">Excluir</a></td>
+      </li>
+    </ul>
+  </div>
+</body>
+}
+}
+else
+{
+    <h1> Não há tarefas cadastradas </h1>
+}

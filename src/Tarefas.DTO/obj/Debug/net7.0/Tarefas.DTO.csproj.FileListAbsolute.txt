@@ -1,0 +1,12 @@
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\bin\Debug\net7.0\Tarefas.DTO.deps.json
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\bin\Debug\net7.0\Tarefas.DTO.dll
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\bin\Debug\net7.0\Tarefas.DTO.pdb
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\Tarefas.DTO.csproj.AssemblyReference.cache
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\Tarefas.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\Tarefas.DTO.AssemblyInfoInputs.cache
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\Tarefas.DTO.AssemblyInfo.cs
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\Tarefas.DTO.csproj.CoreCompileInputs.cache
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\Tarefas.DTO.dll
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\refint\Tarefas.DTO.dll
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\Tarefas.DTO.pdb
+C:\Users\iff_9\tarefas\src\Tarefas.DTO\obj\Debug\net7.0\ref\Tarefas.DTO.dll

@@ -6,9 +6,9 @@ namespace Tarefas.Web.Models
     {
         public int Id { get; set; }
         [DisplayName("Descrição")]
+        public string Titulo { get; set; }
         public string Descricao { get; set; }
         [DisplayName("Títulos")]
-        public string Titulo { get; set; }
-
+        public string Status { get; set; }
     } 
 }   

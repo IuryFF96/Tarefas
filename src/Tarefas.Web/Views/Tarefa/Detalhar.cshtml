@@ -1,12 +1,80 @@
 @model Tarefas.Web.Models.TarefaViewModel
 
-Visualizando tarefa @Model.Id
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
 
-<table>
-    <tr>
-        <td>Titulo</td>
-        <td>@Model.Titulo</td>       
-    </tr>
-        <td>Descrição</td>
-        <td>@Model.Descricao</td>     
-    </tr>
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-code {
+  font-size: 20px;
+  color: #777;
+}
+
+.task-title {
+  margin: 5px 0;
+}
+
+.task-description {
+  margin: 5px 0;
+}
+
+.data-status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.data-status[data-status="Finalizado"] {
+  background-color: green;
+  color: white;
+}
+.data-status[data-status="Pendente"] {
+  background-color: red;
+  color: white;
+}
+.data-status[data-status="Em Progresso"] {
+  background-color: orange;
+  color: white;
+}
+</style>
+
+<h2>Detalhando Tarefa n.º @Model.Id</h2>
+<body>
+  <div class="container">
+    <ul class="task-list">
+      <li class="task">
+        <h2 class="task-title">@Model.Descricao</h2>
+        <span class="data-status" data-status="@Model.Status">@Model.Status</span>
+      </li>
+    </ul>
+  </div>
+</body>
