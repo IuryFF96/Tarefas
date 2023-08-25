@@ -59,16 +59,16 @@ button:hover {
     <form asp-action="Criar" method="post">
       <input type = "hidden" asp-for="Id"/>
         <div>
-            <label for="Titulo">Título:</label>
+            <label asp-for="Titulo">@Html.DisplayNameFor(model => model.Titulo)</label>
             <input type="text" asp-for="Titulo"/>
         </div>
       
         <div>
-            <label for="Descricao">Descrição:</label>
+            <label asp-for="Descricao">@Html.DisplayNameFor(model => model.Descricao)</label>
             <input type="text" asp-for="Descricao"/>
         </div>
         <div>
-            <label for="Status">Status:</label>
+            <label asp-for="Status">@Html.DisplayNameFor(model => model.Status)</label>
             <select type="text" asp-for="Status">
         <option value="Pendente">Pendente</option>
         <option value="Em Progresso">Em Progresso</option>
