@@ -56,26 +56,25 @@ button:hover {
 
 <h2>Cadastro de Tarefa</h2>
 <body>
-    <form asp-action="Criar" method="post">
-      <input type = "hidden" asp-for="Id"/>
+    <form asp-controller = "Tarefa" asp-action="Criar" method="post">
         <div>
-            <label asp-for="Titulo">@Html.DisplayNameFor(model => model.Titulo)</label>
+            <label asp-validation-for="Titulo">@Html.DisplayNameFor(model => model.Titulo)</label>
             <input type="text" asp-for="Titulo"/>
         </div>
       
         <div>
-            <label asp-for="Descricao">@Html.DisplayNameFor(model => model.Descricao)</label>
+            <label asp-validation-for="Descricao">@Html.DisplayNameFor(model => model.Descricao)</label>
             <input type="text" asp-for="Descricao"/>
         </div>
         <div>
             <label asp-for="Status">@Html.DisplayNameFor(model => model.Status)</label>
             <select type="text" asp-for="Status">
-        <option value="Pendente">Pendente</option>
+        <option value="Pendente" selected>Pendente</option>
         <option value="Em Progresso">Em Progresso</option>
         <option value="Finalizado">Finalizado</option>
         </select>
         </div>
-      
+        <div asp-validation-summary="All" class="text-danger"></div>      
       <button type="submit">Cadastrar</button>
     </form>
 </body>
