@@ -9,33 +9,11 @@ using System.Collections.Generic;
 namespace Tarefas.DAO
 
 {
-    public class TarefaDAO
+    public class TarefaDAO : BaseDAO,ITarefaDAO
     {
-        private string DataSourceFile => Environment.CurrentDirectory + "\\TarefasDB.sqlite";
-        public SQLiteConnection Connection => new SQLiteConnection("DataSource=" + DataSourceFile);
         public TarefaDAO()
         {
-            if(!File.Exists(DataSourceFile))
-            {
-                CreateDatabase();
-            }
-        }
-        private void CreateDatabase()
-        {
-            using(var con= Connection)
-            {
-                con.Open();
-                con.Execute
-                (
-                    @"CREATE TABLE Tarefa
-                    (
-                        Id          integer primary key autoincrement,
-                        Titulo      varchar(100) not null,
-                        Descricao   varchar(100) not null,
-                        Status      varchar(100) not null
-                    )"
-                );
-            }
+
         }
         public void Criar(TarefaDTO tarefa)
         {
@@ -99,5 +77,5 @@ namespace Tarefas.DAO
                 );
             }
         }
-    }
+    }    
 }

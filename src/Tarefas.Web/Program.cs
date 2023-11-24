@@ -2,6 +2,7 @@ using Tarefas.DAO;
 using Tarefas.DTO;
 using Tarefas.Web.Models;
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +11,17 @@ builder.Services.AddControllersWithViews();
 
 var config = new AutoMapper.MapperConfiguration(c => {
     c.CreateMap<TarefaViewModel, TarefaDTO>().ReverseMap();
+    c.CreateMap<UsuarioViewModel, UsuarioDTO>().ReverseMap();
+    c.CreateMap<LoginViewModel, UsuarioDTO>().ReverseMap();
 });
 IMapper mapper = config.CreateMapper();
 builder.Services.AddSingleton(mapper);
+builder.Services.AddTransient<ITarefaDAO,TarefaDAO>();
+builder.Services.AddTransient<IUsuarioDAO,UsuarioDAO>();
+builder.Services.AddSingleton<IDataBaseBootstrap, DataBaseBootstrap>();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x=>x.LoginPath="/Usuario");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,8 +39,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseAuthentication();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Services.GetService<IDataBaseBootstrap>()!.Setup();
 
 app.Run();

@@ -41,3 +41,9 @@ C:\Users\iff_9\tarefas\src\Tarefas.Web\bin\Debug\net7.0\Tarefas.DTO.pdb
 C:\Users\iff_9\tarefas\src\Tarefas.Web\bin\Debug\net7.0\Tarefas.DAO.pdb
 C:\Users\iff_9\tarefas\src\Tarefas.Web\obj\Debug\net7.0\Tarefas.Web.csproj.CopyComplete
 C:\Users\iff_9\tarefas\src\Tarefas.Web\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\iff_9\Tarefas\src\Tarefas.Web\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\iff_9\Tarefas\src\Tarefas.Web\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\iff_9\Tarefas\src\Tarefas.Web\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\iff_9\Tarefas\src\Tarefas.Web\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\iff_9\Tarefas\src\Tarefas.Web\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\iff_9\Tarefas\src\Tarefas.Web\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll

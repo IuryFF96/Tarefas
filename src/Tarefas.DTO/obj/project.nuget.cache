@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SdXI0CLtJsPeS9g3S+js+bFCzTJa8nYuXgQ9FB8uChMbcC0rC1FOAbO/irHidf9O/rgcsf91Wzwi9HhtiSDMsQ==",
+  "dgSpecHash": "4YVuWqgvZxiZfa9+kHx4ABK3jmy2aQPY7Dg6fK83iQ2ilV9E92jgjcYOLhsqmQNA+/07IVSz3ZJ0quHDbc8Vdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj",
+  "projectFilePath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

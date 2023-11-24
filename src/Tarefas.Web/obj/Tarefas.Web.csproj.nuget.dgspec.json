@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj": {}
+    "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj": {
+    "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj",
+        "projectUniqueName": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj",
         "projectName": "Tarefas.DAO",
-        "projectPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj",
+        "projectPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj",
         "packagesPath": "C:\\Users\\iff_9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DAO\\obj\\",
+        "outputPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DAO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iff_9\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj": {
-                "projectPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj"
+              "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj": {
+                "projectPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj": {
+    "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj",
         "projectName": "Tarefas.DTO",
-        "projectPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj",
+        "projectPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj",
         "packagesPath": "C:\\Users\\iff_9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\obj\\",
+        "outputPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iff_9\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj": {
+    "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
+        "projectUniqueName": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
         "projectName": "Tarefas.Web",
-        "projectPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
+        "projectPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\Tarefas.Web.csproj",
         "packagesPath": "C:\\Users\\iff_9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.Web\\obj\\",
+        "outputPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iff_9\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -147,11 +147,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj": {
-                "projectPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj"
+              "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj": {
+                "projectPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DAO\\Tarefas.DAO.csproj"
               },
-              "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj": {
-                "projectPath": "C:\\Users\\iff_9\\tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj"
+              "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj": {
+                "projectPath": "C:\\Users\\iff_9\\Tarefas\\src\\Tarefas.DTO\\Tarefas.DTO.csproj"
               }
             }
           }
@@ -169,6 +169,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
