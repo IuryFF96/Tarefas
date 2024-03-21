@@ -27,26 +27,6 @@ namespace Tarefas.Web.Controllers
     [HttpPost]
       public IActionResult CriarUsuario(UsuarioViewModel usuario)
       {
-        var usuarioDTO = _mapper.Map<UsuarioDTO>(usuario);
-
-        if(!ModelState.IsValid)
-        {
-          return View();
-        }
-
-        _usuarioDAO.CriarUsuario(usuarioDTO);
-
-        return View();
-      }
-
-      public IActionResult Index()
-      {
-        return View();
-      }
-      
-    [HttpPost]
-      public IActionResult Index(LoginViewModel usuario)
-      {
         if(ModelState.IsValid)
         {
           var usuarioDTO = _mapper.Map<UsuarioDTO>(usuario);
@@ -60,26 +40,18 @@ namespace Tarefas.Web.Controllers
             ModelState.AddModelError(String.Empty,ex.Message);
             return View();
           }
+          if (user != null)
+		      {
+            ModelState.AddModelError("cadastro.invalido", "Email já existe.");
+            return View();
+		      }
+        
+        _usuarioDAO.CriarUsuario(usuarioDTO);
 
-          var claims = new List<Claim>
-          {
-            new Claim(ClaimTypes.Name,user.Nome),
-            new Claim(ClaimTypes.Email,user.Email)
-          };
-
-          var claimsIdentity = new ClaimsIdentity(claims,CookieAuthenticationDefaults.AuthenticationScheme);
-
-          var authProperts = new AuthenticationProperties
-          {
-            ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
-            IsPersistent = true,
-            RedirectUri = "/Home" 
-          };
-
-          HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,new ClaimsPrincipal(claimsIdentity),authProperts);
-          return LocalRedirect(authProperts.RedirectUri);
-        }
+        return RedirectToAction("Index","Home");
+      }
         return View();
       }
   }
+  
 }

@@ -14,8 +14,8 @@ namespace Tarefas.Web.Models
 
         [Required(ErrorMessage = "A senha deve ser preenchida.")]
         [DataType(DataType.Password)]
-        [MinLength(5, ErrorMessage = "A senha deve ter no mínimo 8 caracteres.")]
-        [MaxLength(100, ErrorMessage = "A senha pode ter no máximo 30 caracteres.")]
+        [MinLength(6, ErrorMessage = "A senha deve ter no mínimo 6 caracteres.")]
+        [MaxLength(20, ErrorMessage = "A senha pode ter no máximo 20 caracteres.")]
         [DisplayName("Senha")]
         public string Senha { get; set; }
     } 

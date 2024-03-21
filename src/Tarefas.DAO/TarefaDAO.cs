@@ -23,24 +23,24 @@ namespace Tarefas.DAO
                 con.Execute
                 (
                     @"INSERT INTO Tarefa
-                    (Titulo, Descricao, Status) VALUES
-                    (@Titulo, @Descricao, @Status);", tarefa
+                    (Titulo, Descricao, Status, UsuarioId) VALUES
+                    (@Titulo, @Descricao, @Status, @usuarioid);", tarefa
                 );
             }
         }
-        public List<TarefaDTO> Consultar()
+        public List<TarefaDTO> Consultar(int usuarioid)
         {
             using (var con = Connection)
             {
                 con.Open();
                 var result = con.Query<TarefaDTO>
                 (
-                    @"SELECT Id, Titulo, Descricao, Status FROM Tarefa"
+                    @"SELECT Id, Titulo, Descricao, Status, UsuarioId FROM Tarefa WHERE UsuarioId = @usuarioid", new {usuarioid}
                 ).ToList();
                 return result;
             }
         }
-        public TarefaDTO Detalhar(int Id)
+        public TarefaDTO Detalhar(int Id, int usuarioid)
         {
             using (var con = Connection)
             {
@@ -48,12 +48,12 @@ namespace Tarefas.DAO
                 TarefaDTO result = con.Query<TarefaDTO>
                 (
                     @"SELECT Id, Titulo, Descricao, Status FROM Tarefa
-                    WHERE Id = @Id", new { Id }
+                    WHERE Id = @Id AND UsuarioId = @usuarioid", new { Id, usuarioid }
                 ).FirstOrDefault();
                 return result;               
             }
         }
-        public void Excluir(int Id)
+        public void Excluir(int Id, int usuarioid)
         {
             using (var con = Connection)
             {
@@ -61,7 +61,7 @@ namespace Tarefas.DAO
                 con.Execute
                 (
                     @"DELETE FROM Tarefa
-                    WHERE Id = @Id", new { Id }
+                    WHERE Id = @Id AND UsuarioId = @usuarioid", new { Id, usuarioid }
                 );
             }
         }

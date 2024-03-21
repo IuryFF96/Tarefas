@@ -5,22 +5,26 @@ using Tarefas.DTO;
 using Tarefas.DAO;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace Tarefas.Web.Controllers
 {
   [Authorize]
     public class TarefaController : Controller
  {  
+    private readonly int _usuarioid;
     private readonly IMapper _mapper;
     private readonly ITarefaDAO _tarefaDAO;
     
-    public TarefaController (IMapper mapper, ITarefaDAO tarefaDAO)
+    public TarefaController (IMapper mapper, ITarefaDAO tarefaDAO, IHttpContextAccessor httpContextAccessor)
     {
       _mapper = mapper;
       _tarefaDAO = tarefaDAO;
+      _usuarioid = int.Parse(httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.PrimarySid));
     }     
     public IActionResult Criar()
       {
+        ViewBag.UsuarioId = _usuarioid;
         return View();
       }
 
@@ -41,7 +45,7 @@ namespace Tarefas.Web.Controllers
       }
       public IActionResult Listar()
       {
-        var listaDeTarefasDTO = _tarefaDAO.Consultar();
+        var listaDeTarefasDTO = _tarefaDAO.Consultar(_usuarioid);
         var listaDeTarefa = new List<TarefaViewModel>();
         foreach (var tarefaDTO in listaDeTarefasDTO)
         {
@@ -52,20 +56,20 @@ namespace Tarefas.Web.Controllers
       }
       public IActionResult Detalhar(int Id)
       {         
-         var tarefaDTO = _tarefaDAO.Detalhar(Id);
+         var tarefaDTO = _tarefaDAO.Detalhar(Id, _usuarioid);
          var tarefaViewModel = _mapper.Map<TarefaViewModel>(tarefaDTO); 
 
          return View(tarefaViewModel);
       }
       public IActionResult Excluir(int Id)
       {
-         _tarefaDAO.Excluir(Id);
+         _tarefaDAO.Excluir(Id, _usuarioid);
 
          return RedirectToAction("Listar");
       }
       public IActionResult Editar(int Id)
       {
-         var tarefaDTO = _tarefaDAO.Detalhar(Id);
+         var tarefaDTO = _tarefaDAO.Detalhar(Id, _usuarioid);
          var tarefaViewModel = _mapper.Map<TarefaViewModel>(tarefaDTO);
          
          return View(tarefaViewModel);

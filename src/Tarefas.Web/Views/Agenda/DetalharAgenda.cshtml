@@ -1,0 +1,114 @@
+@model Tarefas.Web.Models.AgendaViewModel
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.agenda {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.agenda-item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) repeat(3, auto);
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f2f2f2 50%, #f2f2f2 50%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.agenda-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.agenda-item > div {
+    padding: 15px;
+    font-size: 19px;
+}
+
+.descricao {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.data-hora {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.status {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.data-status[data-status="Finalizado"] {
+  background-color: #2ecc71;
+  color: white;
+}
+.data-status[data-status="Pendente"] {
+  background-color: #f33e3e;
+  color: white;
+}
+.data-status[data-status="Em Progresso"] {
+  background-color: #ff9f43;
+  color: white;
+}
+
+.acoes {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.acoes button {
+    margin-right: 20px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.acoes button:hover {
+    background-color: #2980b9;
+}
+
+</style>
+<h1>Detalhando Agenda @Model.Id</h1>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="agenda">
+        <div class="agenda-item">
+            <div class="descricao">@Model.Descricao</div>
+            <div class="data-hora">@Model.Data às @Model.Hora<a>h</a></div>
+            <div class="status data-status" data-status="@Model.Status">@Model.Status</div>
+            <div class="acoes">
+                <button class="editar" onclick="window.location.href='@Url.Action("EditarAgenda", "Agenda", new { id = Model.Id })'">Editar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

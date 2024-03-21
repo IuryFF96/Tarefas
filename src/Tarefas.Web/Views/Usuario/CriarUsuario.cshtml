@@ -22,6 +22,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 form {
   display: grid;
   gap: 10px;
@@ -32,6 +36,15 @@ label {
 }
 
 input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="password"],
 textarea,
 select {
   width: 100%;
@@ -68,7 +81,7 @@ button:hover {
         </div>
         <div>
             <label asp-validation-for="Senha">@Html.DisplayNameFor(model => model.Senha)</label>
-            <input type="text" asp-for="Senha"/>
+            <input type="password" asp-for="Senha"/>
         </div>
         <div asp-validation-summary="All" class="text-danger"></div>      
       <button type="submit">Cadastrar</button>

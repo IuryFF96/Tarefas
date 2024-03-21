@@ -16,12 +16,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\iff_9\Tarefas\src\Tarefas.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Agenda/CriarAgenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXENyaWFyQWdlbmRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Agenda/DetalharAgenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXERldGFsaGFyQWdlbmRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Agenda/EditarAgenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXEVkaXRhckFnZW5kYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Agenda/ListarAgenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXExpc3RhckFnZW5kYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Shared/Error.cshtml]
@@ -50,10 +70,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Usuario/CriarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmlhclVzdWFyaW8uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/Usuario/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/iff_9/Tarefas/src/Tarefas.Web/Views/_ViewImports.cshtml]

@@ -13,15 +13,18 @@ var config = new AutoMapper.MapperConfiguration(c => {
     c.CreateMap<TarefaViewModel, TarefaDTO>().ReverseMap();
     c.CreateMap<UsuarioViewModel, UsuarioDTO>().ReverseMap();
     c.CreateMap<LoginViewModel, UsuarioDTO>().ReverseMap();
+    c.CreateMap<AgendaViewModel, AgendaDTO>().ReverseMap();
 });
 IMapper mapper = config.CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddTransient<ITarefaDAO,TarefaDAO>();
 builder.Services.AddTransient<IUsuarioDAO,UsuarioDAO>();
 builder.Services.AddSingleton<IDataBaseBootstrap, DataBaseBootstrap>();
+builder.Services.AddTransient<IAgendaDAO,AgendaDAO>();
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x=>x.LoginPath="/Usuario");
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x=>x.LoginPath="/Login");
 
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -37,9 +40,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
-
 app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
